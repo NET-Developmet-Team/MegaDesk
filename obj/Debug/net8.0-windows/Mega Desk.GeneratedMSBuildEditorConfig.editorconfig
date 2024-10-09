@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Mega_Desk
-build_property.ProjectDir = C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\
+build_property.ProjectDir = C:\code\BYU-I\2024-Fall\.NET\Org\Mega Desk\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
