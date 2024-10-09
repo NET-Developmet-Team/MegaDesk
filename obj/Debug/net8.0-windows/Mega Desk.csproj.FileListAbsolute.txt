@@ -1,0 +1,21 @@
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\bin\Debug\net8.0-windows\Mega Desk.exe
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\bin\Debug\net8.0-windows\Mega Desk.deps.json
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\bin\Debug\net8.0-windows\Mega Desk.runtimeconfig.json
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\bin\Debug\net8.0-windows\Mega Desk.dll
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\bin\Debug\net8.0-windows\Mega Desk.pdb
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega_Desk.MegaDesk.resources
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega_Desk.Properties.Resources.resources
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.csproj.GenerateResource.cache
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.GeneratedMSBuildEditorConfig.editorconfig
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.AssemblyInfoInputs.cache
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.AssemblyInfo.cs
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.csproj.CoreCompileInputs.cache
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.sourcelink.json
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.dll
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\refint\Mega Desk.dll
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.pdb
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega Desk.genruntimeconfig.cache
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\ref\Mega Desk.dll
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega_Desk.AddForm.resources
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega_Desk.View.resources
+C:\code\BYU-I\2024-Fall\.NET\W03\Mega Desk\obj\Debug\net8.0-windows\Mega_Desk.SearchForm.resources
