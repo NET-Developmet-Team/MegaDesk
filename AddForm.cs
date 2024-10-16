@@ -54,6 +54,50 @@ namespace Mega_Desk
 
         }
 
+        private void updateEstimate(object sender, EventArgs e)
+        {
+            estimatedPriceLabel.Text = $"${calculatePrice()}";
+        }
+
+        private int calculatePrice()
+        {
+            string nameOrder = name.Text;
+            string rushOrder = rushCB.SelectedItem?.ToString() ?? "None";
+            string materialOrder = materialCB.SelectedItem?.ToString();
+            int drawersOrder = (int)drawerUpDown.Value;
+            int widthOrder = (int)widthUpDown.Value;
+            int depthOrder = (int)depthUpDown.Value;
+
+            int sqInches = widthOrder * depthOrder;
+            int sizePrice = 0;
+            int deskPrice = 200;
+            int drawerPrice = drawersOrder * 50;
+
+            if (sqInches > 1000)
+            {
+                sizePrice = sqInches - 1000;
+            }
+
+            Dictionary<string, int> materialCosts = new Dictionary<string, int>
+            {
+                { "Oak", 200 },
+                { "Laminate", 100 },
+                { "Pine", 50 },
+                { "Rosewood", 300 },
+                { "Veneer", 125 }
+            };
+
+            int materialsPrice = 0;
+            if (materialCB.SelectedItem != null)
+            {
+                materialsPrice = materialCosts[materialOrder];
+            }
+
+            deskPrice += materialsPrice + drawerPrice + sizePrice;
+
+            return deskPrice;
+        }
+
         private void addSubmitButton_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(name.Text) ||
@@ -71,6 +115,29 @@ namespace Mega_Desk
             int widthOrder = (int)widthUpDown.Value;
             int depthOrder = (int)depthUpDown.Value;
 
+            int sqInches = widthOrder * depthOrder;
+            int sizePrice = 0;
+            int deskPrice = 200;
+            int drawerPrice = drawersOrder * 50;
+
+            if (sqInches > 1000)
+            {
+                sizePrice = sqInches - 1000;
+            }
+
+            Dictionary<string, int> materialCosts = new Dictionary<string, int>
+            {
+                { "Oak", 200 },
+                { "Laminate", 100 },
+                { "Pine", 50 },
+                { "Rosewood", 300 },
+                { "Veneer", 125 }
+            };
+
+            int materialsPrice = materialCosts[materialOrder];
+
+            deskPrice += materialsPrice + drawerPrice + sizePrice;
+
             MessageBox.Show($"Order placed!\n" +
                 $"Name: {name.Text}\n" +
                 $"Rush Order: {rushOrder}\n" +
@@ -78,7 +145,7 @@ namespace Mega_Desk
                 $"Number of Drawers: {drawersOrder}\n" +
                 $"Width: {widthOrder}\n" +
                 $"Depth: {depthOrder}\n" +
-                $"Total: $1,000,000");
+                $"Total: ${deskPrice}");
             return;
         }
     }

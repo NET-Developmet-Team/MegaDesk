@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mega Desk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a438c31ba41a2158f3bcae22bb9dd917b0bba80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ce53a00e9a7ec2903c21a0f624e68a40bfb2f56")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mega Desk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mega Desk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

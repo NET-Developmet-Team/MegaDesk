@@ -43,6 +43,8 @@
             depthUpDown = new NumericUpDown();
             materialCB = new ComboBox();
             addSubmitButton = new Button();
+            costLabel = new Label();
+            estimatedPriceLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)drawerUpDown).BeginInit();
             ((System.ComponentModel.ISupportInitialize)widthUpDown).BeginInit();
             ((System.ComponentModel.ISupportInitialize)depthUpDown).BeginInit();
@@ -65,8 +67,9 @@
             name.Location = new Point(153, 47);
             name.Margin = new Padding(4);
             name.Name = "name";
-            name.Size = new Size(299, 25);
+            name.Size = new Size(299, 30);
             name.TabIndex = 0;
+            name.TextChanged += updateEstimate;
             // 
             // nameLabel
             // 
@@ -75,7 +78,7 @@
             nameLabel.Location = new Point(153, 22);
             nameLabel.Margin = new Padding(4, 0, 4, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new Size(46, 18);
+            nameLabel.Size = new Size(56, 22);
             nameLabel.TabIndex = 2;
             nameLabel.Text = "Name";
             nameLabel.Click += nameLabel_Click;
@@ -84,10 +87,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Garamond", 12F);
-            label1.Location = new Point(671, 22);
+            label1.Location = new Point(671, 20);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(143, 18);
+            label1.Size = new Size(177, 22);
             label1.TabIndex = 3;
             label1.Text = "Rush Order Deadline";
             label1.Click += label1_Click;
@@ -99,8 +102,9 @@
             rushCB.Location = new Point(671, 46);
             rushCB.Margin = new Padding(4);
             rushCB.Name = "rushCB";
-            rushCB.Size = new Size(183, 26);
+            rushCB.Size = new Size(183, 30);
             rushCB.TabIndex = 1;
+            rushCB.SelectedValueChanged += updateEstimate;
             // 
             // label2
             // 
@@ -109,7 +113,7 @@
             label2.Location = new Point(153, 113);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(219, 30);
+            label2.Size = new Size(274, 38);
             label2.TabIndex = 6;
             label2.Text = "Desk Specifications";
             // 
@@ -119,17 +123,17 @@
             depthLable.Location = new Point(153, 246);
             depthLable.Margin = new Padding(4, 0, 4, 0);
             depthLable.Name = "depthLable";
-            depthLable.Size = new Size(48, 18);
+            depthLable.Size = new Size(59, 22);
             depthLable.TabIndex = 7;
             depthLable.Text = "Depth";
             // 
             // drawerLabel
             // 
             drawerLabel.AutoSize = true;
-            drawerLabel.Location = new Point(671, 158);
+            drawerLabel.Location = new Point(671, 154);
             drawerLabel.Margin = new Padding(4, 0, 4, 0);
             drawerLabel.Name = "drawerLabel";
-            drawerLabel.Size = new Size(98, 18);
+            drawerLabel.Size = new Size(122, 22);
             drawerLabel.TabIndex = 8;
             drawerLabel.Text = "Drawer Count";
             // 
@@ -139,7 +143,7 @@
             widthLabel.Location = new Point(153, 158);
             widthLabel.Margin = new Padding(4, 0, 4, 0);
             widthLabel.Name = "widthLabel";
-            widthLabel.Size = new Size(47, 18);
+            widthLabel.Size = new Size(59, 22);
             widthLabel.TabIndex = 9;
             widthLabel.Text = "Width";
             widthLabel.Click += label5_Click;
@@ -147,10 +151,10 @@
             // materialLabel
             // 
             materialLabel.AutoSize = true;
-            materialLabel.Location = new Point(673, 246);
+            materialLabel.Location = new Point(671, 241);
             materialLabel.Margin = new Padding(4, 0, 4, 0);
             materialLabel.Name = "materialLabel";
-            materialLabel.Size = new Size(118, 18);
+            materialLabel.Size = new Size(143, 22);
             materialLabel.TabIndex = 10;
             materialLabel.Text = "Desktop Material";
             materialLabel.Click += materialLabel_Click;
@@ -160,9 +164,9 @@
             drawerUpDown.Location = new Point(671, 179);
             drawerUpDown.Maximum = new decimal(new int[] { 7, 0, 0, 0 });
             drawerUpDown.Name = "drawerUpDown";
-            drawerUpDown.Size = new Size(120, 25);
+            drawerUpDown.Size = new Size(120, 30);
             drawerUpDown.TabIndex = 4;
-            drawerUpDown.ValueChanged += drawerUpDown_ValueChanged;
+            drawerUpDown.ValueChanged += updateEstimate;
             // 
             // widthUpDown
             // 
@@ -170,9 +174,10 @@
             widthUpDown.Maximum = new decimal(new int[] { 96, 0, 0, 0 });
             widthUpDown.Minimum = new decimal(new int[] { 24, 0, 0, 0 });
             widthUpDown.Name = "widthUpDown";
-            widthUpDown.Size = new Size(120, 25);
+            widthUpDown.Size = new Size(120, 30);
             widthUpDown.TabIndex = 2;
             widthUpDown.Value = new decimal(new int[] { 24, 0, 0, 0 });
+            widthUpDown.ValueChanged += updateEstimate;
             // 
             // depthUpDown
             // 
@@ -180,19 +185,21 @@
             depthUpDown.Maximum = new decimal(new int[] { 48, 0, 0, 0 });
             depthUpDown.Minimum = new decimal(new int[] { 12, 0, 0, 0 });
             depthUpDown.Name = "depthUpDown";
-            depthUpDown.Size = new Size(120, 25);
+            depthUpDown.Size = new Size(120, 30);
             depthUpDown.TabIndex = 3;
             depthUpDown.Value = new decimal(new int[] { 12, 0, 0, 0 });
+            depthUpDown.ValueChanged += updateEstimate;
             // 
             // materialCB
             // 
             materialCB.FormattingEnabled = true;
             materialCB.Items.AddRange(new object[] { "Laminate", "Oak", "Rosewood", "Veneer", "Pine" });
-            materialCB.Location = new Point(673, 266);
+            materialCB.Location = new Point(671, 266);
             materialCB.Name = "materialCB";
-            materialCB.Size = new Size(121, 26);
+            materialCB.Size = new Size(121, 30);
             materialCB.TabIndex = 5;
-            materialCB.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            materialCB.SelectedIndexChanged += updateEstimate;
+            materialCB.SelectedValueChanged += updateEstimate;
             // 
             // addSubmitButton
             // 
@@ -201,17 +208,38 @@
             addSubmitButton.FlatAppearance.MouseOverBackColor = Color.Cyan;
             addSubmitButton.Location = new Point(153, 334);
             addSubmitButton.Name = "addSubmitButton";
-            addSubmitButton.Size = new Size(199, 71);
+            addSubmitButton.Size = new Size(274, 127);
             addSubmitButton.TabIndex = 6;
             addSubmitButton.Text = "Place Order";
             addSubmitButton.UseVisualStyleBackColor = false;
             addSubmitButton.Click += addSubmitButton_Click;
             // 
+            // costLabel
+            // 
+            costLabel.AutoSize = true;
+            costLabel.Font = new Font("Garamond", 20F);
+            costLabel.Location = new Point(671, 334);
+            costLabel.Name = "costLabel";
+            costLabel.Size = new Size(220, 38);
+            costLabel.TabIndex = 11;
+            costLabel.Text = "Estimated Cost";
+            // 
+            // estimatedPriceLabel
+            // 
+            estimatedPriceLabel.AutoSize = true;
+            estimatedPriceLabel.Location = new Point(671, 386);
+            estimatedPriceLabel.Name = "estimatedPriceLabel";
+            estimatedPriceLabel.Size = new Size(28, 22);
+            estimatedPriceLabel.TabIndex = 12;
+            estimatedPriceLabel.Text = "$0";
+            // 
             // AddForm
             // 
-            AutoScaleDimensions = new SizeF(9F, 18F);
+            AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1029, 540);
+            Controls.Add(estimatedPriceLabel);
+            Controls.Add(costLabel);
             Controls.Add(addSubmitButton);
             Controls.Add(materialCB);
             Controls.Add(depthUpDown);
@@ -256,5 +284,7 @@
         private NumericUpDown depthUpDown;
         private ComboBox materialCB;
         private Button addSubmitButton;
+        private Label costLabel;
+        private Label estimatedPriceLabel;
     }
 }
