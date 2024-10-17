@@ -245,5 +245,7 @@ namespace MegaDesk_Alexander
             displayQuoteForm.Show();
             this.Hide();
         }
+
+        
     }
 }
