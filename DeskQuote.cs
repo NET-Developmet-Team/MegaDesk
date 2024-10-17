@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -71,30 +72,36 @@ namespace MegaDesk_Alexander
 
         private int CalculateRushOrderPrice(int surfaceArea, int rushOrderDays)
         {
+            
+
             // If standard production time, don't charge extra
             if (rushOrderDays == 14) { return 0; }
 
+            // returns the list as [60, 70, 80, 40, 50, 60, 30, 35, 40]
+            var rushPrices = ReadFromFile("rushOrderPrices.txt");
+
             if (rushOrderDays == 3)
             {
-                if (surfaceArea < 1000) { return 60; }
-                if ((surfaceArea >= 1000) && (surfaceArea <= 2000)) { return 70; }
-                if (surfaceArea > 2000) { return 80; }
+                if (surfaceArea < 1000) { return rushPrices[0]; }
+                if ((surfaceArea >= 1000) && (surfaceArea <= 2000)) { return rushPrices[1]; }
+                if (surfaceArea > 2000) { return rushPrices[2]; }
             }
 
             if (rushOrderDays == 5)
             {
-                if (surfaceArea < 1000) { return 40; }
-                if ((surfaceArea >= 1000) && (surfaceArea <= 2000)) { return 50; }
-                if (surfaceArea > 2000) { return 60; }
+                if (surfaceArea < 1000) { return rushPrices[3]; }
+                if ((surfaceArea >= 1000) && (surfaceArea <= 2000)) { return rushPrices[4]; }
+                if (surfaceArea > 2000) { return rushPrices[5]; }
             }
 
             if (rushOrderDays == 7)
             {
-                if (surfaceArea < 1000) { return 30; }
-                if ((surfaceArea >= 1000) && (surfaceArea <= 2000)) { return 35; }
-                if (surfaceArea > 2000) { return 40; }
+                if (surfaceArea < 1000) { return rushPrices[6]; }
+                if ((surfaceArea >= 1000) && (surfaceArea <= 2000)) { return rushPrices[7]; }
+                if (surfaceArea > 2000) { return rushPrices[8]; }
             }
             return 0;
+
         }
 
         private int CalculateDrawerPrice(int numberOfDrawers)
@@ -108,6 +115,29 @@ namespace MegaDesk_Alexander
         {
             return Desk.Material.ToString();
         }
+
+        public List<int> ReadFromFile(string fileName)
+        {
+            string filePath = Path.Combine(Application.StartupPath, "Assets", fileName);
+
+            var prices = new List<int>();
+            try
+            {
+                string[] lines = System.IO.File.ReadAllLines(filePath);
+                foreach (string line in lines)
+                {
+                    prices.Add(int.Parse(line));
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error reading file: " + e.Message);
+            }
+
+            return prices;
+
+        }
+
     }
 
 }
