@@ -42,7 +42,7 @@
             this.AddNewQuoteButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.AddNewQuoteButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.AddNewQuoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddNewQuoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddNewQuoteButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddNewQuoteButton.Location = new System.Drawing.Point(63, 89);
             this.AddNewQuoteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AddNewQuoteButton.Name = "AddNewQuoteButton";
@@ -57,7 +57,7 @@
             this.ViewQuotesButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ViewQuotesButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.ViewQuotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ViewQuotesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewQuotesButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewQuotesButton.Location = new System.Drawing.Point(63, 219);
             this.ViewQuotesButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ViewQuotesButton.Name = "ViewQuotesButton";
@@ -72,7 +72,7 @@
             this.SearchQuotesButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.SearchQuotesButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.SearchQuotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SearchQuotesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchQuotesButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchQuotesButton.Location = new System.Drawing.Point(63, 349);
             this.SearchQuotesButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SearchQuotesButton.Name = "SearchQuotesButton";
@@ -87,7 +87,7 @@
             this.ExitButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ExitButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitButton.Location = new System.Drawing.Point(63, 479);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ExitButton.Name = "ExitButton";
@@ -118,6 +118,7 @@
             this.Controls.Add(this.SearchQuotesButton);
             this.Controls.Add(this.ViewQuotesButton);
             this.Controls.Add(this.AddNewQuoteButton);
+            this.Font = new System.Drawing.Font("Garamond", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainMenu";
