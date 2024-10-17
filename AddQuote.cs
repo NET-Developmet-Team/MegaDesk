@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using MegaDesk_Alexander;
 
 namespace MegaDesk_Alexander
 {
@@ -239,11 +242,25 @@ namespace MegaDesk_Alexander
             // Create a new DeskQoute Object
             DeskQuote newDeskQuote = new DeskQuote(firstName, lastName, newDesk, rushOrderDays);
 
+            // Write to JSON
+            writeToJSON(newDeskQuote);
+
             // Navigate to DisplayQuote form
             DisplayQuote displayQuoteForm = new DisplayQuote(newDeskQuote);
             displayQuoteForm.Tag = this.Tag;
             displayQuoteForm.Show();
             this.Hide();
         }
+
+
+        public void writeToJSON(DeskQuote quote)
+        {
+            string jsonString = JsonConvert.SerializeObject(quote, Formatting.Indented);
+            Console.WriteLine(jsonString);
+            // Write to a file
+            string filePath = Path.Combine(Application.StartupPath, "Assets", "quoteList.json");
+            File.WriteAllText(filePath, jsonString);
+        }
     }
+
 }
