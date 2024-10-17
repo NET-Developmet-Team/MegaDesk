@@ -255,11 +255,41 @@ namespace MegaDesk_Alexander
 
         public void writeToJSON(DeskQuote quote)
         {
-            string jsonString = JsonConvert.SerializeObject(quote, Formatting.Indented);
-            Console.WriteLine(jsonString);
-            // Write to a file
-            string filePath = Path.Combine(Application.StartupPath, "Assets", "quoteList.json");
-            File.WriteAllText(filePath, jsonString);
+            // Get the project directory
+            string projectDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName;
+            string directoryPath = Path.Combine(projectDirectory, "Assets");
+            string filePath = Path.Combine(directoryPath, "quotes.json");
+
+            try
+            {
+                // Ensure the directory exists
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                List<DeskQuote> quotes = new List<DeskQuote>();
+
+                // Read existing quotes from the file if it exists
+                if (File.Exists(filePath))
+                {
+                    string existingQuotesJson = File.ReadAllText(filePath);
+                    quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(existingQuotesJson) ?? new List<DeskQuote>();
+                }
+
+                // Add the new quote to the list
+                quotes.Add(quote);
+
+                // Serialize the updated list to JSON
+                string updatedQuotesJson = JsonConvert.SerializeObject(quotes, Formatting.Indented);
+
+                // Write the updated JSON back to the file
+                File.WriteAllText(filePath, updatedQuotesJson);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error writing to JSON file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 

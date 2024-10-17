@@ -1,1 +1,40 @@
-﻿
+[
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "I",
+    "LastName": "did it",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 800,
+    "surfaceArea": 1800,
+    "materialPrice": 200,
+    "rushOrderPrice": 70,
+    "drawerPrice": 250,
+    "totalPrice": 1520,
+    "QuoteDate": "2024-10-17T15:31:31.9506998-06:00",
+    "Desk": {
+      "Width": 60,
+      "Depth": 30,
+      "NumberOfDrawers": 5,
+      "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "Test",
+    "LastName": "McTesty",
+    "RushOrderDays": 5,
+    "surfaceAreaSurcharge": 250,
+    "surfaceArea": 1250,
+    "materialPrice": 200,
+    "rushOrderPrice": 50,
+    "drawerPrice": 250,
+    "totalPrice": 950,
+    "QuoteDate": "2024-10-17T15:33:02.1410325-06:00",
+    "Desk": {
+      "Width": 50,
+      "Depth": 25,
+      "NumberOfDrawers": 5,
+      "Material": 1
+    }
+  }
+]
