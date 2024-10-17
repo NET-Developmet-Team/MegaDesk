@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Mega_Desk.Properties {
+namespace MegaDesk_Alexander.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Mega_Desk.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Mega_Desk.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MegaDesk_Alexander.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace Mega_Desk.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap desk_icon_9306 {
+        internal static System.Drawing.Bitmap megadesklogo_no_background {
             get {
-                object obj = ResourceManager.GetObject("desk-icon-9306", resourceCulture);
+                object obj = ResourceManager.GetObject("megadesklogo_no background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
