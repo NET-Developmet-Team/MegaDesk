@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using MegaDesk_Alexander;
 
 namespace MegaDesk_Alexander
 {
@@ -239,6 +242,9 @@ namespace MegaDesk_Alexander
             // Create a new DeskQoute Object
             DeskQuote newDeskQuote = new DeskQuote(firstName, lastName, newDesk, rushOrderDays);
 
+            // Write to JSON
+            writeToJSON(newDeskQuote);
+
             // Navigate to DisplayQuote form
             DisplayQuote displayQuoteForm = new DisplayQuote(newDeskQuote);
             displayQuoteForm.Tag = this.Tag;
@@ -246,6 +252,45 @@ namespace MegaDesk_Alexander
             this.Hide();
         }
 
-        
+
+        public void writeToJSON(DeskQuote quote)
+        {
+            // Get the project directory
+            string projectDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName;
+            string directoryPath = Path.Combine(projectDirectory, "Assets");
+            string filePath = Path.Combine(directoryPath, "quotes.json");
+
+            try
+            {
+                // Ensure the directory exists
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                List<DeskQuote> quotes = new List<DeskQuote>();
+
+                // Read existing quotes from the file if it exists
+                if (File.Exists(filePath))
+                {
+                    string existingQuotesJson = File.ReadAllText(filePath);
+                    quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(existingQuotesJson) ?? new List<DeskQuote>();
+                }
+
+                // Add the new quote to the list
+                quotes.Add(quote);
+
+                // Serialize the updated list to JSON
+                string updatedQuotesJson = JsonConvert.SerializeObject(quotes, Formatting.Indented);
+
+                // Write the updated JSON back to the file
+                File.WriteAllText(filePath, updatedQuotesJson);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error writing to JSON file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+
 }
