@@ -33,6 +33,7 @@
             this.submitNewQuoteButton = new System.Windows.Forms.Button();
             this.surfaceMaterialComboBox = new System.Windows.Forms.ComboBox();
             this.surfaceMaterialLabel = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // mainMenuReturnButton
@@ -40,7 +41,7 @@
             this.mainMenuReturnButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.mainMenuReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mainMenuReturnButton.ForeColor = System.Drawing.Color.Black;
-            this.mainMenuReturnButton.Location = new System.Drawing.Point(167, 549);
+            this.mainMenuReturnButton.Location = new System.Drawing.Point(339, 566);
             this.mainMenuReturnButton.Name = "mainMenuReturnButton";
             this.mainMenuReturnButton.Size = new System.Drawing.Size(200, 45);
             this.mainMenuReturnButton.TabIndex = 0;
@@ -59,6 +60,7 @@
             this.submitNewQuoteButton.TabIndex = 8;
             this.submitNewQuoteButton.Text = "Search";
             this.submitNewQuoteButton.UseVisualStyleBackColor = false;
+            this.submitNewQuoteButton.Click += new System.EventHandler(this.submitNewQuoteButton_Click);
             // 
             // surfaceMaterialComboBox
             // 
@@ -83,10 +85,27 @@
             this.surfaceMaterialLabel.TabIndex = 10;
             this.surfaceMaterialLabel.Text = "Search by Surface Material";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 150);
+            this.flowLayoutPanel1.MinimumSize = new System.Drawing.Size(100, 100);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(850, 396);
+            this.flowLayoutPanel1.TabIndex = 11;
+            this.flowLayoutPanel1.WrapContents = false;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
             // SearchQuotes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(878, 644);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.surfaceMaterialLabel);
             this.Controls.Add(this.surfaceMaterialComboBox);
             this.Controls.Add(this.submitNewQuoteButton);
@@ -107,5 +126,6 @@
         private System.Windows.Forms.Button submitNewQuoteButton;
         private System.Windows.Forms.ComboBox surfaceMaterialComboBox;
         private System.Windows.Forms.Label surfaceMaterialLabel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "BaseDeskPrice": 200,
     "FirstName": "I",
@@ -35,6 +35,44 @@
       "Depth": 25,
       "NumberOfDrawers": 5,
       "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "25",
+    "LastName": "25",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 0,
+    "surfaceArea": 625,
+    "materialPrice": 100,
+    "rushOrderPrice": 60,
+    "drawerPrice": 100,
+    "totalPrice": 460,
+    "QuoteDate": "2024-10-17T15:41:22.1361759-06:00",
+    "Desk": {
+      "Width": 25,
+      "Depth": 25,
+      "NumberOfDrawers": 2,
+      "Material": 2
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "Aaron",
+    "LastName": "Alexander",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 0,
+    "surfaceArea": 625,
+    "materialPrice": 100,
+    "rushOrderPrice": 60,
+    "drawerPrice": 100,
+    "totalPrice": 460,
+    "QuoteDate": "2024-10-17T15:43:16.9185533-06:00",
+    "Desk": {
+      "Width": 25,
+      "Depth": 25,
+      "NumberOfDrawers": 2,
+      "Material": 2
     }
   }
 ]
