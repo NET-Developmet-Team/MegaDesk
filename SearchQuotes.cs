@@ -15,10 +15,11 @@ namespace MegaDesk_Alexander
         public SearchQuotes()
         {
             InitializeComponent();
+            surfaceMaterialComboBox.DataSource = Enum.GetValues(typeof(DesktopMaterial));
         }
 
         // Return to MainMenu
-        private void button1_Click(object sender, EventArgs e)
+        private void mainMenuReturnButton_Click(object sender, EventArgs e)
         {
             var viewMainMenu = (MainMenu)Tag;
             viewMainMenu.Show();
@@ -30,6 +31,11 @@ namespace MegaDesk_Alexander
         private void SearchQuotes_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void surfaceMaterialComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

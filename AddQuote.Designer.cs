@@ -71,10 +71,10 @@
             this.widthLabel.AutoSize = true;
             this.widthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.widthLabel.ForeColor = System.Drawing.Color.Black;
-            this.widthLabel.Location = new System.Drawing.Point(171, 241);
+            this.widthLabel.Location = new System.Drawing.Point(171, 250);
             this.widthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(120, 15);
+            this.widthLabel.Size = new System.Drawing.Size(176, 22);
             this.widthLabel.TabIndex = 1;
             this.widthLabel.Text = "Width (24-96 inches)";
             // 
@@ -85,7 +85,7 @@
             this.widthTextBox.Location = new System.Drawing.Point(167, 210);
             this.widthTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.widthTextBox.Name = "widthTextBox";
-            this.widthTextBox.Size = new System.Drawing.Size(247, 26);
+            this.widthTextBox.Size = new System.Drawing.Size(247, 35);
             this.widthTextBox.TabIndex = 2;
             this.widthTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.widthTextBox_Validating);
             // 
@@ -94,10 +94,10 @@
             this.depthLabel.AutoSize = true;
             this.depthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.depthLabel.ForeColor = System.Drawing.Color.Black;
-            this.depthLabel.Location = new System.Drawing.Point(478, 241);
+            this.depthLabel.Location = new System.Drawing.Point(478, 250);
             this.depthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.depthLabel.Name = "depthLabel";
-            this.depthLabel.Size = new System.Drawing.Size(122, 15);
+            this.depthLabel.Size = new System.Drawing.Size(178, 22);
             this.depthLabel.TabIndex = 3;
             this.depthLabel.Text = "Depth (12-48 inches)";
             // 
@@ -108,7 +108,7 @@
             this.depthTextBox.Location = new System.Drawing.Point(473, 210);
             this.depthTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.depthTextBox.Name = "depthTextBox";
-            this.depthTextBox.Size = new System.Drawing.Size(247, 26);
+            this.depthTextBox.Size = new System.Drawing.Size(247, 35);
             this.depthTextBox.TabIndex = 3;
             this.depthTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.depthTextBox_KeyPress);
             this.depthTextBox.Leave += new System.EventHandler(this.depthTextBox_Leave);
@@ -119,7 +119,7 @@
             this.label3.Location = new System.Drawing.Point(657, 92);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 5;
             // 
             // label4
@@ -128,7 +128,7 @@
             this.label4.Location = new System.Drawing.Point(345, 320);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.Size = new System.Drawing.Size(0, 20);
             this.label4.TabIndex = 6;
             // 
             // firstNameTextBox
@@ -138,7 +138,7 @@
             this.firstNameTextBox.Location = new System.Drawing.Point(167, 76);
             this.firstNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.firstNameTextBox.Name = "firstNameTextBox";
-            this.firstNameTextBox.Size = new System.Drawing.Size(247, 26);
+            this.firstNameTextBox.Size = new System.Drawing.Size(247, 35);
             this.firstNameTextBox.TabIndex = 0;
             // 
             // firstNameLabel
@@ -149,7 +149,7 @@
             this.firstNameLabel.Location = new System.Drawing.Point(171, 107);
             this.firstNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(30, 15);
+            this.firstNameLabel.Size = new System.Drawing.Size(45, 22);
             this.firstNameLabel.TabIndex = 8;
             this.firstNameLabel.Text = "First";
             // 
@@ -160,7 +160,7 @@
             this.numberOfDrawersTextBox.Location = new System.Drawing.Point(167, 314);
             this.numberOfDrawersTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numberOfDrawersTextBox.Name = "numberOfDrawersTextBox";
-            this.numberOfDrawersTextBox.Size = new System.Drawing.Size(247, 26);
+            this.numberOfDrawersTextBox.Size = new System.Drawing.Size(247, 35);
             this.numberOfDrawersTextBox.TabIndex = 4;
             this.numberOfDrawersTextBox.Leave += new System.EventHandler(this.numberOfDrawersTextBox_Leave);
             // 
@@ -169,10 +169,10 @@
             this.numberOfDrawersLabel.AutoSize = true;
             this.numberOfDrawersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.numberOfDrawersLabel.ForeColor = System.Drawing.Color.Black;
-            this.numberOfDrawersLabel.Location = new System.Drawing.Point(171, 345);
+            this.numberOfDrawersLabel.Location = new System.Drawing.Point(171, 354);
             this.numberOfDrawersLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numberOfDrawersLabel.Name = "numberOfDrawersLabel";
-            this.numberOfDrawersLabel.Size = new System.Drawing.Size(143, 15);
+            this.numberOfDrawersLabel.Size = new System.Drawing.Size(208, 22);
             this.numberOfDrawersLabel.TabIndex = 10;
             this.numberOfDrawersLabel.Text = "Number of Drawers (0-7)";
             // 
@@ -181,10 +181,10 @@
             this.surfaceMaterialLabel.AutoSize = true;
             this.surfaceMaterialLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.surfaceMaterialLabel.ForeColor = System.Drawing.Color.Black;
-            this.surfaceMaterialLabel.Location = new System.Drawing.Point(478, 345);
+            this.surfaceMaterialLabel.Location = new System.Drawing.Point(478, 350);
             this.surfaceMaterialLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.surfaceMaterialLabel.Name = "surfaceMaterialLabel";
-            this.surfaceMaterialLabel.Size = new System.Drawing.Size(97, 15);
+            this.surfaceMaterialLabel.Size = new System.Drawing.Size(140, 22);
             this.surfaceMaterialLabel.TabIndex = 11;
             this.surfaceMaterialLabel.Text = "Surface Material";
             // 
@@ -195,7 +195,7 @@
             this.submitNewQuoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitNewQuoteButton.Location = new System.Drawing.Point(520, 549);
             this.submitNewQuoteButton.Name = "submitNewQuoteButton";
-            this.submitNewQuoteButton.Size = new System.Drawing.Size(200, 44);
+            this.submitNewQuoteButton.Size = new System.Drawing.Size(200, 45);
             this.submitNewQuoteButton.TabIndex = 7;
             this.submitNewQuoteButton.Text = "Submit Quote";
             this.submitNewQuoteButton.UseVisualStyleBackColor = false;
@@ -209,7 +209,7 @@
             this.lastNameLabel.Location = new System.Drawing.Point(478, 107);
             this.lastNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(30, 15);
+            this.lastNameLabel.Size = new System.Drawing.Size(44, 22);
             this.lastNameLabel.TabIndex = 17;
             this.lastNameLabel.Text = "Last";
             // 
@@ -220,7 +220,7 @@
             this.lastNameTextBox.Location = new System.Drawing.Point(473, 76);
             this.lastNameTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lastNameTextBox.Name = "lastNameTextBox";
-            this.lastNameTextBox.Size = new System.Drawing.Size(247, 26);
+            this.lastNameTextBox.Size = new System.Drawing.Size(247, 35);
             this.lastNameTextBox.TabIndex = 1;
             // 
             // nameSectionLabel
@@ -232,7 +232,7 @@
             this.nameSectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameSectionLabel.Name = "nameSectionLabel";
             this.nameSectionLabel.Padding = new System.Windows.Forms.Padding(5);
-            this.nameSectionLabel.Size = new System.Drawing.Size(78, 35);
+            this.nameSectionLabel.Size = new System.Drawing.Size(106, 46);
             this.nameSectionLabel.TabIndex = 18;
             this.nameSectionLabel.Text = "Name";
             // 
@@ -244,7 +244,7 @@
             this.deskSpecificationsSectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.deskSpecificationsSectionLabel.Name = "deskSpecificationsSectionLabel";
             this.deskSpecificationsSectionLabel.Padding = new System.Windows.Forms.Padding(5);
-            this.deskSpecificationsSectionLabel.Size = new System.Drawing.Size(212, 35);
+            this.deskSpecificationsSectionLabel.Size = new System.Drawing.Size(304, 46);
             this.deskSpecificationsSectionLabel.TabIndex = 19;
             this.deskSpecificationsSectionLabel.Text = "Desk Specifications";
             // 
@@ -257,7 +257,7 @@
             this.daysToBuildSectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.daysToBuildSectionLabel.Name = "daysToBuildSectionLabel";
             this.daysToBuildSectionLabel.Padding = new System.Windows.Forms.Padding(5);
-            this.daysToBuildSectionLabel.Size = new System.Drawing.Size(157, 35);
+            this.daysToBuildSectionLabel.Size = new System.Drawing.Size(224, 46);
             this.daysToBuildSectionLabel.TabIndex = 20;
             this.daysToBuildSectionLabel.Text = "Days To Build";
             // 
@@ -275,7 +275,7 @@
             "14"});
             this.rushOrderDaysComboBox.Location = new System.Drawing.Point(167, 434);
             this.rushOrderDaysComboBox.Name = "rushOrderDaysComboBox";
-            this.rushOrderDaysComboBox.Size = new System.Drawing.Size(247, 28);
+            this.rushOrderDaysComboBox.Size = new System.Drawing.Size(247, 37);
             this.rushOrderDaysComboBox.TabIndex = 6;
             // 
             // surfaceMaterialComboBox
@@ -287,7 +287,7 @@
             this.surfaceMaterialComboBox.FormattingEnabled = true;
             this.surfaceMaterialComboBox.Location = new System.Drawing.Point(473, 310);
             this.surfaceMaterialComboBox.Name = "surfaceMaterialComboBox";
-            this.surfaceMaterialComboBox.Size = new System.Drawing.Size(247, 28);
+            this.surfaceMaterialComboBox.Size = new System.Drawing.Size(247, 37);
             this.surfaceMaterialComboBox.TabIndex = 5;
             // 
             // rushOrderDaysLabel
@@ -295,22 +295,23 @@
             this.rushOrderDaysLabel.AutoSize = true;
             this.rushOrderDaysLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.rushOrderDaysLabel.ForeColor = System.Drawing.Color.Black;
-            this.rushOrderDaysLabel.Location = new System.Drawing.Point(171, 465);
+            this.rushOrderDaysLabel.Location = new System.Drawing.Point(171, 474);
             this.rushOrderDaysLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rushOrderDaysLabel.Name = "rushOrderDaysLabel";
-            this.rushOrderDaysLabel.Size = new System.Drawing.Size(100, 15);
+            this.rushOrderDaysLabel.Size = new System.Drawing.Size(149, 22);
             this.rushOrderDaysLabel.TabIndex = 23;
             this.rushOrderDaysLabel.Text = "Rush Order Days";
             // 
             // AddQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(878, 644);
+            this.Controls.Add(this.firstNameTextBox);
+            this.Controls.Add(this.rushOrderDaysComboBox);
             this.Controls.Add(this.rushOrderDaysLabel);
             this.Controls.Add(this.surfaceMaterialComboBox);
-            this.Controls.Add(this.rushOrderDaysComboBox);
             this.Controls.Add(this.daysToBuildSectionLabel);
             this.Controls.Add(this.deskSpecificationsSectionLabel);
             this.Controls.Add(this.nameSectionLabel);
@@ -321,7 +322,6 @@
             this.Controls.Add(this.numberOfDrawersLabel);
             this.Controls.Add(this.numberOfDrawersTextBox);
             this.Controls.Add(this.firstNameLabel);
-            this.Controls.Add(this.firstNameTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.depthTextBox);
