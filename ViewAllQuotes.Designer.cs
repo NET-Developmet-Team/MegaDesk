@@ -57,13 +57,15 @@
             // 
             // Return
             // 
+            this.Return.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(87)))), ((int)(((byte)(117)))));
+            this.Return.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
             this.Return.Location = new System.Drawing.Point(13, 507);
             this.Return.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Return.Name = "Return";
             this.Return.Size = new System.Drawing.Size(216, 123);
             this.Return.TabIndex = 1;
             this.Return.Text = "Back to Main Menu";
-            this.Return.UseVisualStyleBackColor = true;
+            this.Return.UseVisualStyleBackColor = false;
             this.Return.Click += new System.EventHandler(this.Return_Click);
             // 
             // dataGridViewQuotes
@@ -224,6 +226,7 @@
             // ViewAllQuotes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(174)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(878, 644);
             this.Controls.Add(this.dataGridViewQuotes);
             this.Controls.Add(this.Return);

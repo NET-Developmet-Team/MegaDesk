@@ -38,9 +38,9 @@
             // 
             // mainMenuReturnButton
             // 
-            this.mainMenuReturnButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.mainMenuReturnButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(87)))), ((int)(((byte)(117)))));
             this.mainMenuReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mainMenuReturnButton.ForeColor = System.Drawing.Color.Black;
+            this.mainMenuReturnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
             this.mainMenuReturnButton.Location = new System.Drawing.Point(339, 566);
             this.mainMenuReturnButton.Name = "mainMenuReturnButton";
             this.mainMenuReturnButton.Size = new System.Drawing.Size(200, 45);
@@ -51,7 +51,7 @@
             // 
             // submitNewQuoteButton
             // 
-            this.submitNewQuoteButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.submitNewQuoteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(255)))), ((int)(((byte)(139)))));
             this.submitNewQuoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitNewQuoteButton.ForeColor = System.Drawing.Color.Black;
             this.submitNewQuoteButton.Location = new System.Drawing.Point(336, 56);
@@ -69,10 +69,10 @@
             this.surfaceMaterialComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.surfaceMaterialComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.surfaceMaterialComboBox.FormattingEnabled = true;
-            this.surfaceMaterialComboBox.ItemHeight = 36;
+            this.surfaceMaterialComboBox.ItemHeight = 25;
             this.surfaceMaterialComboBox.Location = new System.Drawing.Point(34, 56);
             this.surfaceMaterialComboBox.Name = "surfaceMaterialComboBox";
-            this.surfaceMaterialComboBox.Size = new System.Drawing.Size(270, 44);
+            this.surfaceMaterialComboBox.Size = new System.Drawing.Size(270, 33);
             this.surfaceMaterialComboBox.TabIndex = 9;
             this.surfaceMaterialComboBox.SelectedIndexChanged += new System.EventHandler(this.surfaceMaterialComboBox_SelectedIndexChanged);
             // 
@@ -81,7 +81,7 @@
             this.surfaceMaterialLabel.AutoSize = true;
             this.surfaceMaterialLabel.Location = new System.Drawing.Point(30, 33);
             this.surfaceMaterialLabel.Name = "surfaceMaterialLabel";
-            this.surfaceMaterialLabel.Size = new System.Drawing.Size(200, 20);
+            this.surfaceMaterialLabel.Size = new System.Drawing.Size(135, 13);
             this.surfaceMaterialLabel.TabIndex = 10;
             this.surfaceMaterialLabel.Text = "Search by Surface Material";
             // 
@@ -104,6 +104,7 @@
             // SearchQuotes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(174)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(878, 644);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.surfaceMaterialLabel);
