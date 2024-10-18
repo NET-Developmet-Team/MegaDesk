@@ -22,7 +22,7 @@ namespace MegaDesk_Alexander
             areaLabel.Text = "Area: " + deskQuote.surfaceArea.ToString();
             materialLabel.Text = "Material: " + deskQuote.Desk.Material.ToString();
             drawerLabel.Text = "Drawer Count: " + deskQuote.Desk.NumberOfDrawers.ToString();
-            priceLabel.Text = "Price: " + deskQuote.totalPrice.ToString();
+            priceLabel.Text = "Price: " + "$"+ deskQuote.totalPrice.ToString();
         }
     }
 }
