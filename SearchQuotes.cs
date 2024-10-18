@@ -51,26 +51,34 @@ namespace MegaDesk_Alexander
             flowLayoutPanel1.Controls.Clear();
 
             // Get the project directory
-            string projectDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName;
-            string filePath = Path.Combine(projectDirectory, "Assets", "quotes.json");
-
-            string json = File.ReadAllText(filePath);
-            List<DeskQuote> quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(json);
-
-            List<DeskQuote> results = new List<DeskQuote>();
-
-            foreach (DeskQuote quote in quotes)
+            try
             {
-                if (quote.GetMaterialName() == surfaceMaterialComboBox.Text)
-                {
-                    results.Add(quote);
+                string projectDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName;
+                string filePath = Path.Combine(projectDirectory, "Assets", "quotes.json");
 
-                    var reportItem = new searchByMaterialControl(quote);
-                    reportItem.Width = flowLayoutPanel1.ClientSize.Width - 40; // Slight margin
-                    flowLayoutPanel1.Controls.Add(reportItem);
+                string json = File.ReadAllText(filePath);
+                List<DeskQuote> quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(json);
+
+                List<DeskQuote> results = new List<DeskQuote>();
+
+                foreach (DeskQuote quote in quotes)
+                {
+                    if (quote.GetMaterialName() == surfaceMaterialComboBox.Text)
+                    {
+                        results.Add(quote);
+
+                        var reportItem = new searchByMaterialControl(quote);
+                        reportItem.Width = flowLayoutPanel1.ClientSize.Width - 40; // Slight margin
+                        flowLayoutPanel1.Controls.Add(reportItem);
+                    }
                 }
+                flowLayoutPanel1.Padding = new Padding(10);
             }
-            flowLayoutPanel1.Padding = new Padding(10);
+            catch (Exception ex)
+            {
+                MessageBox.Show("No quotes have been saved yet. Try adding a quote!");
+            }
+            
 
 
         }
