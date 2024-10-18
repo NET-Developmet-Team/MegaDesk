@@ -10,6 +10,7 @@
     "rushOrderPrice": 70,
     "drawerPrice": 250,
     "totalPrice": 1520,
+    "FullName": "I did it",
     "QuoteDate": "2024-10-17T15:31:31.9506998-06:00",
     "Desk": {
       "Width": 60,
@@ -29,12 +30,53 @@
     "rushOrderPrice": 50,
     "drawerPrice": 250,
     "totalPrice": 950,
+    "FullName": "Test McTesty",
     "QuoteDate": "2024-10-17T15:33:02.1410325-06:00",
     "Desk": {
       "Width": 50,
       "Depth": 25,
       "NumberOfDrawers": 5,
       "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "Grant",
+    "LastName": "Watson",
+    "RushOrderDays": 7,
+    "surfaceAreaSurcharge": 1420,
+    "surfaceArea": 2420,
+    "materialPrice": 100,
+    "rushOrderPrice": 40,
+    "drawerPrice": 350,
+    "totalPrice": 2110,
+    "FullName": "Grant Watson",
+    "QuoteDate": "2024-10-17T18:04:07.2017153-06:00",
+    "Desk": {
+      "Width": 55,
+      "Depth": 44,
+      "NumberOfDrawers": 7,
+      "Material": 2
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "Mine",
+    "LastName": "Still Works",
+    "RushOrderDays": 14,
+    "surfaceAreaSurcharge": 936,
+    "surfaceArea": 1936,
+    "materialPrice": 300,
+    "rushOrderPrice": 0,
+    "drawerPrice": 100,
+    "totalPrice": 1536,
+    "FullName": "Mine Still Works",
+    "QuoteDate": "2024-10-17T18:07:43.0913747-06:00",
+    "Desk": {
+      "Width": 44,
+      "Depth": 44,
+      "NumberOfDrawers": 2,
+      "Material": 4
     }
   }
 ]

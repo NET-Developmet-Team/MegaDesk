@@ -20,6 +20,7 @@ namespace MegaDesk_Alexander
         public int rushOrderPrice { get; set; }
         public int drawerPrice { get; set; }
         public int totalPrice { get; set; }
+        public string FullName { get { return FirstName + " " + LastName; } }
         public DateTime QuoteDate { get; set; }
         public Desk Desk { get; set; }
         public int BaseDeskPrice = 200;
