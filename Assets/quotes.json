@@ -79,4 +79,133 @@
       "Material": 1
     }
   }
+    "FirstName": "Aaron",
+    "LastName": "Alexander",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 0,
+    "surfaceArea": 625,
+    "materialPrice": 100,
+    "rushOrderPrice": 60,
+    "drawerPrice": 100,
+    "totalPrice": 460,
+    "QuoteDate": "2024-10-17T15:43:16.9185533-06:00",
+    "Desk": {
+      "Width": 25,
+      "Depth": 25,
+      "NumberOfDrawers": 2,
+      "Material": 2
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "me",
+    "LastName": "hungy",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 849,
+    "surfaceArea": 1849,
+    "materialPrice": 200,
+    "rushOrderPrice": 70,
+    "drawerPrice": 350,
+    "totalPrice": 1669,
+    "QuoteDate": "2024-10-17T18:06:35.6403463-06:00",
+    "Desk": {
+      "Width": 43,
+      "Depth": 43,
+      "NumberOfDrawers": 7,
+      "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "me",
+    "LastName": "hungy",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 849,
+    "surfaceArea": 1849,
+    "materialPrice": 200,
+    "rushOrderPrice": 70,
+    "drawerPrice": 350,
+    "totalPrice": 1669,
+    "QuoteDate": "2024-10-17T18:08:34.1485398-06:00",
+    "Desk": {
+      "Width": 43,
+      "Depth": 43,
+      "NumberOfDrawers": 7,
+      "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "big",
+    "LastName": "fatty",
+    "RushOrderDays": 5,
+    "surfaceAreaSurcharge": 849,
+    "surfaceArea": 1849,
+    "materialPrice": 300,
+    "rushOrderPrice": 50,
+    "drawerPrice": 150,
+    "totalPrice": 1549,
+    "QuoteDate": "2024-10-17T18:09:15.0780491-06:00",
+    "Desk": {
+      "Width": 43,
+      "Depth": 43,
+      "NumberOfDrawers": 3,
+=========
+    "FirstName": "Mine",
+    "LastName": "Still Works",
+    "RushOrderDays": 14,
+    "surfaceAreaSurcharge": 936,
+    "surfaceArea": 1936,
+    "materialPrice": 300,
+    "rushOrderPrice": 0,
+    "drawerPrice": 100,
+    "totalPrice": 1536,
+    "FullName": "Mine Still Works",
+    "QuoteDate": "2024-10-17T18:07:43.0913747-06:00",
+    "Desk": {
+      "Width": 44,
+      "Depth": 44,
+      "NumberOfDrawers": 2,
+>>>>>>>>> Temporary merge branch 2
+      "Material": 4
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+<<<<<<<<< Temporary merge branch 1
+    "FirstName": "me ",
+    "LastName": "hungy",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 1352,
+    "surfaceArea": 2352,
+    "materialPrice": 200,
+    "rushOrderPrice": 80,
+    "drawerPrice": 200,
+    "totalPrice": 2032,
+    "QuoteDate": "2024-10-17T18:18:00.2492328-06:00",
+    "Desk": {
+      "Width": 56,
+      "Depth": 42,
+      "NumberOfDrawers": 4,
+      "Material": 1
+=========
+    "FirstName": "Test",
+    "LastName": "McTester",
+    "RushOrderDays": 5,
+    "surfaceAreaSurcharge": 2200,
+    "surfaceArea": 3200,
+    "materialPrice": 125,
+    "rushOrderPrice": 60,
+    "drawerPrice": 250,
+    "totalPrice": 2835,
+    "FullName": "Test McTester",
+    "QuoteDate": "2024-10-17T18:20:36.2626182-06:00",
+    "Desk": {
+      "Width": 80,
+      "Depth": 40,
+      "NumberOfDrawers": 5,
+      "Material": 5
+>>>>>>>>> Temporary merge branch 2
+    }
+  }
 ]
