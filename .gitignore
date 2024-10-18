@@ -9,7 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.json
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -397,6 +397,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
 
 # That dumb json file
 *.json
