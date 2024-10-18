@@ -71,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchByMaterialControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="searchByMaterialControl.Designer.cs">
+      <DependentUpon>searchByMaterialControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchQuotes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="searchByMaterialControl.resx">
+      <DependentUpon>searchByMaterialControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SearchQuotes.resx">
       <DependentUpon>SearchQuotes.cs</DependentUpon>
     </EmbeddedResource>

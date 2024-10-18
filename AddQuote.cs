@@ -277,7 +277,7 @@ namespace MegaDesk_Alexander
                     quotes = JsonConvert.DeserializeObject<List<DeskQuote>>(existingQuotesJson) ?? new List<DeskQuote>();
                 }
 
-                // Add the new quote to the list
+                 //Add the new quote to the list
                 quotes.Add(quote);
 
                 // Serialize the updated list to JSON

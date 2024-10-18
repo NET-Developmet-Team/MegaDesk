@@ -4,6 +4,10 @@ using System.Windows.Forms;
 using System;
 
 public class DeskQuote
+=======
+
+
+namespace MegaDesk_Alexander
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
