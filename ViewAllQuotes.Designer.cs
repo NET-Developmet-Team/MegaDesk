@@ -232,6 +232,7 @@
             this.Name = "ViewAllQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MegaDesk";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewAllQuotes_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuotes)).EndInit();
             this.ResumeLayout(false);
 

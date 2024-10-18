@@ -78,5 +78,9 @@ namespace MegaDesk_Alexander
             }
         }
 
+        private void ViewAllQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
