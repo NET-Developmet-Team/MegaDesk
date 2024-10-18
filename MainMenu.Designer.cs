@@ -39,10 +39,11 @@
             // 
             // AddNewQuoteButton
             // 
-            this.AddNewQuoteButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.AddNewQuoteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(87)))), ((int)(((byte)(117)))));
             this.AddNewQuoteButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.AddNewQuoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddNewQuoteButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddNewQuoteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
             this.AddNewQuoteButton.Location = new System.Drawing.Point(63, 89);
             this.AddNewQuoteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AddNewQuoteButton.Name = "AddNewQuoteButton";
@@ -54,10 +55,11 @@
             // 
             // ViewQuotesButton
             // 
-            this.ViewQuotesButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ViewQuotesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(87)))), ((int)(((byte)(117)))));
             this.ViewQuotesButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.ViewQuotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewQuotesButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewQuotesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
             this.ViewQuotesButton.Location = new System.Drawing.Point(63, 219);
             this.ViewQuotesButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ViewQuotesButton.Name = "ViewQuotesButton";
@@ -69,10 +71,11 @@
             // 
             // SearchQuotesButton
             // 
-            this.SearchQuotesButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.SearchQuotesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(87)))), ((int)(((byte)(117)))));
             this.SearchQuotesButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.SearchQuotesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SearchQuotesButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchQuotesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(254)))));
             this.SearchQuotesButton.Location = new System.Drawing.Point(63, 349);
             this.SearchQuotesButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SearchQuotesButton.Name = "SearchQuotesButton";
@@ -84,7 +87,7 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(76)))), ((int)(((byte)(99)))));
             this.ExitButton.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ExitButton.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,7 +102,7 @@
             // 
             // logoImage
             // 
-            this.logoImage.BackColor = System.Drawing.Color.LightGray;
+            this.logoImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(174)))), ((int)(((byte)(124)))));
             this.logoImage.Image = global::MegaDesk_Alexander.Properties.Resources.megadesklogo_no_background;
             this.logoImage.Location = new System.Drawing.Point(327, 167);
             this.logoImage.Name = "logoImage";
@@ -111,7 +114,7 @@
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(174)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(878, 644);
             this.Controls.Add(this.logoImage);
             this.Controls.Add(this.ExitButton);
