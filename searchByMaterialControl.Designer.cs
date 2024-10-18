@@ -59,18 +59,6 @@
             this.dateLabel.Text = "Date";
             this.dateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 69);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 36);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Width:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // widthLabel
             // 
             this.widthLabel.AutoSize = true;
@@ -82,18 +70,7 @@
             this.widthLabel.TabIndex = 3;
             this.widthLabel.Text = "width";
             this.widthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(50, 127);
-            this.label3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 36);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Depth:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
             // 
             // depthLabel
             // 
@@ -118,54 +95,7 @@
             this.areaLabel.TabIndex = 6;
             this.areaLabel.Text = "area";
             this.areaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(351, 67);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 36);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Area:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(300, 128);
-            this.label6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 36);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Drawers:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(635, 127);
-            this.label7.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 36);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Price:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(593, 67);
-            this.label8.Margin = new System.Windows.Forms.Padding(0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(135, 36);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Material:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
             // 
             // drawerLabel
             // 
