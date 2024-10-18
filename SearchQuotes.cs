@@ -48,7 +48,7 @@ namespace MegaDesk_Alexander
         
         private void submitNewQuoteButton_Click(object sender, EventArgs e)
         {
-            //flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.Clear();
 
             // Get the project directory
             string projectDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName;

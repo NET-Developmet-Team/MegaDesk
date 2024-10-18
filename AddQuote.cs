@@ -257,7 +257,7 @@ namespace MegaDesk_Alexander
         {
             // Get the project directory
             string projectDirectory = Directory.GetParent(Application.StartupPath).Parent.FullName;
-            string directoryPath = Path.Combine(projectDirectory, "Assets", "quotes.json");
+            string directoryPath = Path.Combine(projectDirectory, "Assets");
             string filePath = Path.Combine(directoryPath, "quotes.json");
 
             try
