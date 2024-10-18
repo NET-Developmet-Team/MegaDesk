@@ -25,6 +25,7 @@ namespace MegaDesk_Alexander
         public DateTime QuoteDate { get; set; }
         public Desk Desk { get; set; }
         public int BaseDeskPrice = 200;
+        public string FullName { get { return FirstName + " " + LastName;  } }
 
         public DeskQuote(string firstName, string lastName, Desk desk, int rushOrderDays)
         {
