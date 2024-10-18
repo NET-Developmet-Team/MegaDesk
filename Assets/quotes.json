@@ -131,5 +131,24 @@
       "NumberOfDrawers": 3,
       "Material": 4
     }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "me ",
+    "LastName": "hungy",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 1352,
+    "surfaceArea": 2352,
+    "materialPrice": 200,
+    "rushOrderPrice": 80,
+    "drawerPrice": 200,
+    "totalPrice": 2032,
+    "QuoteDate": "2024-10-17T18:18:00.2492328-06:00",
+    "Desk": {
+      "Width": 56,
+      "Depth": 42,
+      "NumberOfDrawers": 4,
+      "Material": 1
+    }
   }
 ]
