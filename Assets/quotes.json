@@ -78,5 +78,25 @@
       "NumberOfDrawers": 2,
       "Material": 4
     }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "Test",
+    "LastName": "McTester",
+    "RushOrderDays": 5,
+    "surfaceAreaSurcharge": 2200,
+    "surfaceArea": 3200,
+    "materialPrice": 125,
+    "rushOrderPrice": 60,
+    "drawerPrice": 250,
+    "totalPrice": 2835,
+    "FullName": "Test McTester",
+    "QuoteDate": "2024-10-17T18:20:36.2626182-06:00",
+    "Desk": {
+      "Width": 80,
+      "Depth": 40,
+      "NumberOfDrawers": 5,
+      "Material": 5
+    }
   }
 ]
