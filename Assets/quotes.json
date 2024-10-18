@@ -3,6 +3,7 @@
     "BaseDeskPrice": 200,
     "FirstName": "I",
     "LastName": "did it",
+    "FullName": "I did it",
     "RushOrderDays": 3,
     "surfaceAreaSurcharge": 800,
     "surfaceArea": 1800,
@@ -10,7 +11,6 @@
     "rushOrderPrice": 70,
     "drawerPrice": 250,
     "totalPrice": 1520,
-    "FullName": "I did it",
     "QuoteDate": "2024-10-17T15:31:31.9506998-06:00",
     "Desk": {
       "Width": 60,
@@ -23,6 +23,7 @@
     "BaseDeskPrice": 200,
     "FirstName": "Test",
     "LastName": "McTesty",
+    "FullName": "Test McTesty",
     "RushOrderDays": 5,
     "surfaceAreaSurcharge": 250,
     "surfaceArea": 1250,
@@ -30,12 +31,51 @@
     "rushOrderPrice": 50,
     "drawerPrice": 250,
     "totalPrice": 950,
-    "FullName": "Test McTesty",
     "QuoteDate": "2024-10-17T15:33:02.1410325-06:00",
     "Desk": {
       "Width": 50,
       "Depth": 25,
       "NumberOfDrawers": 5,
+      "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "zack",
+    "LastName": "ped",
+    "FullName": null,
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 462,
+    "surfaceArea": 1462,
+    "materialPrice": 200,
+    "rushOrderPrice": 70,
+    "drawerPrice": 200,
+    "totalPrice": 1132,
+    "QuoteDate": "2024-10-17T19:13:52.0672134-06:00",
+    "Desk": {
+      "Width": 34,
+      "Depth": 43,
+      "NumberOfDrawers": 4,
+      "Material": 1
+    }
+  },
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "your",
+    "LastName": "mom",
+    "FullName": "your mom",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 904,
+    "surfaceArea": 1904,
+    "materialPrice": 200,
+    "rushOrderPrice": 70,
+    "drawerPrice": 200,
+    "totalPrice": 1574,
+    "QuoteDate": "2024-10-17T19:15:06.9809978-06:00",
+    "Desk": {
+      "Width": 56,
+      "Depth": 34,
+      "NumberOfDrawers": 4,
       "Material": 1
     }
   }
