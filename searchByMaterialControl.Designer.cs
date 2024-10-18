@@ -44,7 +44,7 @@
             this.nameLabel.Font = new System.Drawing.Font("Garamond", 18F, System.Drawing.FontStyle.Bold);
             this.nameLabel.Location = new System.Drawing.Point(3, 9);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(93, 34);
+            this.nameLabel.Size = new System.Drawing.Size(75, 27);
             this.nameLabel.TabIndex = 0;
             this.nameLabel.Text = "Name";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,7 +66,7 @@
             this.widthLabel.Location = new System.Drawing.Point(45, 74);
             this.widthLabel.Margin = new System.Windows.Forms.Padding(0);
             this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(78, 30);
+            this.widthLabel.Size = new System.Drawing.Size(65, 25);
             this.widthLabel.TabIndex = 3;
             this.widthLabel.Text = "width";
             this.widthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -78,7 +78,7 @@
             this.depthLabel.Location = new System.Drawing.Point(45, 133);
             this.depthLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.depthLabel.Name = "depthLabel";
-            this.depthLabel.Size = new System.Drawing.Size(79, 30);
+            this.depthLabel.Size = new System.Drawing.Size(65, 25);
             this.depthLabel.TabIndex = 5;
             this.depthLabel.Text = "depth";
             this.depthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,7 +91,7 @@
             this.areaLabel.Location = new System.Drawing.Point(349, 73);
             this.areaLabel.Margin = new System.Windows.Forms.Padding(0);
             this.areaLabel.Name = "areaLabel";
-            this.areaLabel.Size = new System.Drawing.Size(61, 30);
+            this.areaLabel.Size = new System.Drawing.Size(52, 25);
             this.areaLabel.TabIndex = 6;
             this.areaLabel.Text = "area";
             this.areaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,7 +103,7 @@
             this.drawerLabel.Location = new System.Drawing.Point(328, 133);
             this.drawerLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.drawerLabel.Name = "drawerLabel";
-            this.drawerLabel.Size = new System.Drawing.Size(102, 30);
+            this.drawerLabel.Size = new System.Drawing.Size(86, 25);
             this.drawerLabel.TabIndex = 11;
             this.drawerLabel.Text = "drawers";
             this.drawerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,7 +133,6 @@
             // searchByMaterialControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoSize = true;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.materialLabel);
