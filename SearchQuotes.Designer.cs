@@ -51,7 +51,7 @@
             // 
             // submitNewQuoteButton
             // 
-            this.submitNewQuoteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(255)))), ((int)(((byte)(139)))));
+            this.submitNewQuoteButton.BackColor = System.Drawing.Color.LightGreen;
             this.submitNewQuoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitNewQuoteButton.ForeColor = System.Drawing.Color.Black;
             this.submitNewQuoteButton.Location = new System.Drawing.Point(336, 56);
