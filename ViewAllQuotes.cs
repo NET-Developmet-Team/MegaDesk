@@ -24,7 +24,7 @@ namespace MegaDesk_Alexander
         {
             var mainMenu = (MainMenu)Tag;
             mainMenu.Show();
-            Close();
+            Hide();
         }
 
         private void LoadQuotes()

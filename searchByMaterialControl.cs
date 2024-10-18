@@ -24,10 +24,5 @@ namespace MegaDesk_Alexander
             drawerLabel.Text = "Drawer Count: " + deskQuote.Desk.NumberOfDrawers.ToString();
             priceLabel.Text = "Price: " + deskQuote.totalPrice.ToString();
         }
-
-        private void depthLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
