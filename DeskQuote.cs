@@ -3,21 +3,24 @@ using System.IO;
 using System.Windows.Forms;
 using System;
 
-public class DeskQuote
+
+
+namespace MegaDesk_Alexander
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public int RushOrderDays { get; set; }
-    public int surfaceAreaSurcharge { get; set; }
-    public int surfaceArea { get; set; }
-    public int materialPrice { get; set; }
-    public int rushOrderPrice { get; set; }
-    public int drawerPrice { get; set; }
-    public int totalPrice { get; set; }
-    public string FullName { get { return FirstName + " " + LastName; } }
-    public DateTime QuoteDate { get; set; }
-    public Desk Desk { get; set; }
-    public int BaseDeskPrice = 200;
+    public class DeskQuote
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int RushOrderDays { get; set; }
+        public int surfaceAreaSurcharge { get; set; }
+        public int surfaceArea { get; set; }
+        public int materialPrice { get; set; }
+        public int rushOrderPrice { get; set; }
+        public int drawerPrice { get; set; }
+        public int totalPrice { get; set; }
+        public DateTime QuoteDate { get; set; }
+        public Desk Desk { get; set; }
+        public int BaseDeskPrice = 200;
 
     // Two-dimensional array to hold rush order prices
     private int[,] rushOrderPrices;
