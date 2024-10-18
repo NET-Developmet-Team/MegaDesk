@@ -1,3 +1,22 @@
 [
-
+  {
+    "BaseDeskPrice": 200,
+    "FirstName": "eh",
+    "LastName": "eh",
+    "RushOrderDays": 3,
+    "surfaceAreaSurcharge": 1025,
+    "surfaceArea": 2025,
+    "materialPrice": 200,
+    "rushOrderPrice": 80,
+    "drawerPrice": 300,
+    "totalPrice": 1805,
+    "QuoteDate": "2024-10-17T19:22:43.1130936-06:00",
+    "Desk": {
+      "Width": 45,
+      "Depth": 45,
+      "NumberOfDrawers": 6,
+      "Material": 1
+    },
+    "FullName": "eh eh"
+  }
 ]

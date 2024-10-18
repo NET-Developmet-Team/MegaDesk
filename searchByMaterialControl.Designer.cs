@@ -66,11 +66,10 @@
             this.widthLabel.Location = new System.Drawing.Point(166, 69);
             this.widthLabel.Margin = new System.Windows.Forms.Padding(0);
             this.widthLabel.Name = "widthLabel";
-            this.widthLabel.Size = new System.Drawing.Size(93, 36);
+            this.widthLabel.Size = new System.Drawing.Size(78, 30);
             this.widthLabel.TabIndex = 3;
             this.widthLabel.Text = "width";
             this.widthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // depthLabel
             // 
@@ -79,7 +78,7 @@
             this.depthLabel.Location = new System.Drawing.Point(165, 128);
             this.depthLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.depthLabel.Name = "depthLabel";
-            this.depthLabel.Size = new System.Drawing.Size(94, 36);
+            this.depthLabel.Size = new System.Drawing.Size(79, 30);
             this.depthLabel.TabIndex = 5;
             this.depthLabel.Text = "depth";
             this.depthLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,11 +90,10 @@
             this.areaLabel.Location = new System.Drawing.Point(436, 67);
             this.areaLabel.Margin = new System.Windows.Forms.Padding(0);
             this.areaLabel.Name = "areaLabel";
-            this.areaLabel.Size = new System.Drawing.Size(71, 36);
+            this.areaLabel.Size = new System.Drawing.Size(61, 30);
             this.areaLabel.TabIndex = 6;
             this.areaLabel.Text = "area";
             this.areaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            
             // 
             // drawerLabel
             // 
@@ -104,30 +102,32 @@
             this.drawerLabel.Location = new System.Drawing.Point(436, 127);
             this.drawerLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.drawerLabel.Name = "drawerLabel";
-            this.drawerLabel.Size = new System.Drawing.Size(121, 36);
+            this.drawerLabel.Size = new System.Drawing.Size(102, 30);
             this.drawerLabel.TabIndex = 11;
             this.drawerLabel.Text = "drawers";
             this.drawerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // materialLabel
             // 
+            this.materialLabel.AutoSize = true;
             this.materialLabel.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialLabel.Location = new System.Drawing.Point(734, 67);
+            this.materialLabel.Location = new System.Drawing.Point(615, 63);
             this.materialLabel.Margin = new System.Windows.Forms.Padding(0);
             this.materialLabel.Name = "materialLabel";
-            this.materialLabel.Size = new System.Drawing.Size(125, 36);
+            this.materialLabel.Size = new System.Drawing.Size(107, 30);
             this.materialLabel.TabIndex = 12;
             this.materialLabel.Text = "material";
             this.materialLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // priceLabel
             // 
+            this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("Garamond", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceLabel.Location = new System.Drawing.Point(734, 128);
+            this.priceLabel.Location = new System.Drawing.Point(657, 121);
             this.priceLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.priceLabel.MinimumSize = new System.Drawing.Size(50, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(83, 36);
+            this.priceLabel.Size = new System.Drawing.Size(71, 30);
             this.priceLabel.TabIndex = 13;
             this.priceLabel.Text = "price";
             this.priceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
